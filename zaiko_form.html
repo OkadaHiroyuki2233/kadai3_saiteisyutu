@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>在庫フォーム</title>
+    <style>
+        body {
+            width:60%;
+            padding:20px 5%;
+            margin:auto;
+        }
+        h1 {
+            text-align:center;
+        }
+    </style>
+</head>
+<body>  
+    <form action="zaiko_send.php" method="post">
+        <table>
+            <tr>
+                <th>商品名</th>
+                                
+                <td><input type="text" name="item"></td>
+            </tr>
+            <tr>
+                <th>商品説明</th>
+                <td><textarea name="i_desc" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <th>仕入先</th>
+                <td><input type="text" name="i_comp"></td>
+            </tr>
+            <tr>
+                <th>生産国</th>
+                <td><input type="text" name="country"></td>
+            </tr>
+            <tr>
+                <th>価格</th>
+                <td><input type="text" name="price"></td>
+            </tr>
+            <tr>
+                <th>仕入れ価格</th>
+                <td><input type="text" name="w_price"></td>
+            </tr>
+            <tr>
+                <th>在庫数</th>
+                <td><input type="text" name="stock"></td>
+            </tr>
+            <tr>
+            <th>入荷日</th>
+                <td><input type="date" name="day"></td>
+            </tr>
+
+            <tr colspan="2">
+                <td><input type="submit" value="送信"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
